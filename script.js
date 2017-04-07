@@ -40,9 +40,7 @@ function fillin(){
 
 function wypiszLiczby(){
   var ciagTekstowy = '<ul>';
-  // for (var i = 0; i < wybraneLiczby.length; i++) {
-  //   ciagTekstowy += '<li>' + wybraneLiczby[i] + '</li>';
-  // }
+  
   wybraneLiczby.map(function(value) {
     ciagTekstowy += '<li>' + value + '</li>';
   })
@@ -75,7 +73,7 @@ function sort(){
       }
     }
     else if (wybraneLiczby.indexOf(liczba) == -1 && wybraneLiczby.length == 6){
-      alert('Wybrales juz kurwa 6!');
+      alert('juz maksymalną ilość liczb!');
     }
     else {
       wybraneLiczby.splice(wybraneLiczby.indexOf(liczba), 1);
@@ -105,7 +103,7 @@ $("#myModal").modal({
 });
 
 // Modal function ----------------------------------
-var noName = ['Enter your name!', 'Are you jocking?', 'Enter your kurwa name!'];
+var noName = ['Enter your name!', 'Are you jocking?', 'Enter your name, PLEASE!'];
 
 $('#myModal').on('shown.bs.modal', function () {
   $('#userName').focus()
@@ -132,9 +130,6 @@ $('.save').click(function () {
     if (click == noName.length){
       click = 0;
     }
-    // for (var i=0; i<noName.length; i++){
-    //   $('.modal-body').append('<br>'+'<blockquote>'+'<p>'+noName[i]+'</p>'+'</blockquote>');   
-    // }
   } else {
     $('#myModal').modal('hide');
     $('.hello').append(userName+'!');
@@ -161,7 +156,7 @@ $('#tablica2 li').on('click', function(){
     console.log(liczba); 
   }
   else {
-    alert('Wybrales juz kurwa 6!');
+    alert('Wybrales juz maksymalną ilość liczb!');
   }
 
   if (wybraneLiczby.length > 5){
