@@ -133,7 +133,6 @@ $('.save').click(function () {
   } else {
     $('#myModal').modal('hide');
     $('.hello').append(userName+'!');
-    console.log(userName);
   }
 });
 
@@ -146,14 +145,11 @@ tablicaKulek();
 $('#tablica2 li').on('click', function(){
   if (wybraneLiczby.length <= 6){
     li = $(this);
-    console.log(li);
     liczba = $(this).text();
     
     sort();
     wypiszLiczby();
-
-    console.log(wybraneLiczby);
-    console.log(liczba); 
+ 
   }
   else {
     alert('Wybrales juz maksymalną ilość liczb!');
@@ -172,8 +168,6 @@ $('#tablica2 li').on('click', function(){
 
 fillin();
 
-console.log(tablicaLiczb);
-console.log(wybraneLiczby.length);
  
 // Fill in losowe-liczby and matched results ------------------
 $('.losowanie').click(function () {
@@ -197,11 +191,10 @@ tablicaLiczb.splice(index, 1);
   
 x += '</ul>';
 y += '</ul>';
-console.log(x);
+
 $('#losowe-liczby').html(x);
 $('#results').html(y);
 fillin();
-console.log(tablicaLiczb);
 
 });
 
