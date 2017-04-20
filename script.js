@@ -73,7 +73,7 @@ function sort(){
       }
     }
     else if (wybraneLiczby.indexOf(liczba) == -1 && wybraneLiczby.length == 6){
-      alert('juz maksymalną ilość liczb!');
+      alert('Wybrałeś juz maksymalną ilość liczb!');
     }
     else {
       wybraneLiczby.splice(wybraneLiczby.indexOf(liczba), 1);
