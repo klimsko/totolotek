@@ -73,7 +73,7 @@ function sort(){
       }
     }
     else if (wybraneLiczby.indexOf(liczba) == -1 && wybraneLiczby.length == 6){
-      alert('Wybrałeś juz maksymalną ilość liczb!');
+      alert('Wybrałeś juz maksymalną liczbę liczb!');
     }
     else {
       wybraneLiczby.splice(wybraneLiczby.indexOf(liczba), 1);
@@ -152,7 +152,7 @@ $('#tablica2 li').on('click', function(){
  
   }
   else {
-    alert('Wybrales juz maksymalną ilość liczb!');
+    alert('Wybrales juz maksymalną liczbę liczb!');
   }
 
   if (wybraneLiczby.length > 5){
